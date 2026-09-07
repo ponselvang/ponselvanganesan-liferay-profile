@@ -1,184 +1,1131 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ponselvan Ganesan | Senior Liferay Developer</title>
-<meta name="description" content="Professional portfolio of Ponselvan Ganesan, Senior Liferay Developer and Development Lead.">
-<style>
-:root{
-  --bg:#f4f7fb; --surface:#ffffff; --surface-soft:#eef4f8;
-  --text:#152536; --muted:#617184; --primary:#155e75; --primary2:#0f766e;
-  --accent:#14b8a6; --line:#dce5ed; --shadow:0 18px 50px rgba(20,45,70,.09);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;z-index:-2;background:
-radial-gradient(circle at 8% 10%,rgba(20,184,166,.10),transparent 26%),
-radial-gradient(circle at 92% 24%,rgba(21,94,117,.10),transparent 28%),
-linear-gradient(180deg,#f8fafc 0%,#eef4f7 48%,#f7fafc 100%)}
-a{text-decoration:none;color:inherit}
-.container{width:min(1160px,92%);margin:auto}
-header{position:sticky;top:0;z-index:50;background:rgba(248,250,252,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(220,229,237,.9)}
-.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:900;font-size:1.08rem;letter-spacing:-.02em}.brand span{color:var(--primary2)}
-nav{display:flex;gap:28px;color:#415367;font-weight:700}nav a{transition:color .25s ease}nav a:hover{color:var(--primary2)}
-.nav-cta{padding:10px 16px;border:1px solid #bfd3df;border-radius:11px;color:var(--primary);font-weight:800;background:#fff}
-.menu{display:none;border:0;background:none;font-size:25px;color:var(--text)}
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Ponselvan Ganesan | Senior Liferay Developer</title>
+      <meta
+         name="description"
+         content="Professional portfolio of Ponselvan Ganesan, Senior Liferay Developer and Development Lead."
+      />
+      <style>
+         :root {
+            --bg: #f4f7fb;
+            --surface: #ffffff;
+            --surface-soft: #eef4f8;
+            --text: #152536;
+            --muted: #617184;
+            --primary: #155e75;
+            --primary2: #0f766e;
+            --accent: #14b8a6;
+            --line: #dce5ed;
+            --shadow: 0 18px 50px rgba(20, 45, 70, 0.09);
+         }
+         * {
+            box-sizing: border-box;
+         }
+         html {
+            scroll-behavior: smooth;
+         }
+         body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font:
+               16px/1.7 Inter,
+               system-ui,
+               -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               sans-serif;
+            overflow-x: hidden;
+         }
+         body:before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: radial-gradient(
+                  circle at 8% 10%,
+                  rgba(20, 184, 166, 0.1),
+                  transparent 26%
+               ),
+               radial-gradient(
+                  circle at 92% 24%,
+                  rgba(21, 94, 117, 0.1),
+                  transparent 28%
+               ),
+               linear-gradient(180deg, #f8fafc 0%, #eef4f7 48%, #f7fafc 100%);
+         }
+         a {
+            text-decoration: none;
+            color: inherit;
+         }
+         .container {
+            width: min(1160px, 92%);
+            margin: auto;
+         }
+         header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(248, 250, 252, 0.86);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(220, 229, 237, 0.9);
+         }
+         .nav {
+            height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+         .brand {
+            font-weight: 900;
+            font-size: 1.08rem;
+            letter-spacing: -0.02em;
+         }
+         .brand span {
+            color: var(--primary2);
+         }
+         nav {
+            display: flex;
+            gap: 28px;
+            color: #415367;
+            font-weight: 700;
+         }
+         nav a {
+            transition: color 0.25s ease;
+         }
+         nav a:hover {
+            color: var(--primary2);
+         }
+         .nav-cta {
+            padding: 10px 16px;
+            border: 1px solid #bfd3df;
+            border-radius: 11px;
+            color: var(--primary);
+            font-weight: 800;
+            background: #fff;
+         }
+         nav a[target="_blank"] {
+            position: relative;
+         }
+         nav a[target="_blank"]:after {
+            content: "↗";
+            font-size: 0.7em;
+            margin-left: 4px;
+            opacity: 0.55;
+         }
+         .menu {
+            display: none;
+            border: 0;
+            background: none;
+            font-size: 25px;
+            color: var(--text);
+         }
 
-.hero{padding:96px 0 90px;position:relative}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:75px;align-items:center}
-.eyebrow{color:var(--primary2);font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem}
-h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.94;letter-spacing:-.065em;margin:14px 0 24px}
-h1 span{color:var(--primary)}
-.hero-copy{font-size:1.13rem;color:var(--muted);max-width:700px}
-.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;background:var(--primary);color:#fff;font-weight:850;box-shadow:0 9px 25px rgba(21,94,117,.18);transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
-.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(21,94,117,.24);background:#104c60}
-.btn.secondary{background:#fff;color:var(--primary);border:1px solid #c9d8e2;box-shadow:none}
-.btn.secondary:hover{background:#f3f8fa}
+         .hero {
+            padding: 96px 0 90px;
+            position: relative;
+         }
+         .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 75px;
+            align-items: center;
+         }
+         .eyebrow {
+            color: var(--primary2);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-size: 0.76rem;
+         }
+         h1 {
+            font-size: clamp(3.2rem, 7vw, 6.2rem);
+            line-height: 0.94;
+            letter-spacing: -0.065em;
+            margin: 14px 0 24px;
+         }
+         h1 span {
+            color: var(--primary);
+         }
+         .hero-copy {
+            font-size: 1.13rem;
+            color: var(--muted);
+            max-width: 700px;
+         }
+         .actions {
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+         }
+         .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 19px;
+            border-radius: 12px;
+            background: var(--primary);
+            color: #fff;
+            font-weight: 850;
+            box-shadow: 0 9px 25px rgba(21, 94, 117, 0.18);
+            transition:
+               transform 0.25s ease,
+               box-shadow 0.25s ease,
+               background 0.25s ease;
+         }
+         .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(21, 94, 117, 0.24);
+            background: #104c60;
+         }
+         .btn.secondary {
+            background: #fff;
+            color: var(--primary);
+            border: 1px solid #c9d8e2;
+            box-shadow: none;
+         }
+         .btn.secondary:hover {
+            background: #f3f8fa;
+         }
 
-.profile-wrap{position:relative}
-.profile-wrap:before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:rgba(20,184,166,.14);right:-50px;top:-45px;z-index:-1}
-.profile-card{background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.95);border-radius:30px;padding:16px;box-shadow:var(--shadow);transform:rotate(1.2deg);transition:transform .45s ease}
-.profile-card:hover{transform:rotate(0) translateY(-5px)}
-.profile-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:21px;display:block;background:#c9e9ee}
-.profile-meta{padding:15px 6px 4px}.profile-meta strong{display:block;font-size:1.08rem}.profile-meta small{color:var(--muted)}
+         .profile-wrap {
+            position: relative;
+         }
+         .profile-wrap:before {
+            content: "";
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background: rgba(20, 184, 166, 0.14);
+            right: -50px;
+            top: -45px;
+            z-index: -1;
+         }
+         .profile-card {
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 16px;
+            box-shadow: var(--shadow);
+            transform: rotate(1.2deg);
+            transition: transform 0.45s ease;
+         }
+         .profile-card:hover {
+            transform: rotate(0) translateY(-5px);
+         }
+         .profile-photo {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 21px;
+            display: block;
+            background: #c9e9ee;
+         }
+         .profile-meta {
+            padding: 15px 6px 4px;
+         }
+         .profile-meta strong {
+            display: block;
+            font-size: 1.08rem;
+         }
+         .profile-meta small {
+            color: var(--muted);
+         }
 
-section{padding:92px 0;position:relative}
-.section-alt{background:rgba(255,255,255,.55);border-top:1px solid rgba(220,229,237,.7);border-bottom:1px solid rgba(220,229,237,.7)}
-.section-head{max-width:780px;margin-bottom:42px}.section-head h2{font-size:2.65rem;line-height:1.08;letter-spacing:-.04em;margin:9px 0 13px}.section-head p{color:var(--muted);font-size:1.03rem}
+         section {
+            padding: 92px 0;
+            position: relative;
+         }
+         .section-alt {
+            background: rgba(255, 255, 255, 0.55);
+            border-top: 1px solid rgba(220, 229, 237, 0.7);
+            border-bottom: 1px solid rgba(220, 229, 237, 0.7);
+         }
+         .section-head {
+            max-width: 780px;
+            margin-bottom: 42px;
+         }
+         .section-head h2 {
+            font-size: 2.65rem;
+            line-height: 1.08;
+            letter-spacing: -0.04em;
+            margin: 9px 0 13px;
+         }
+         .section-head p {
+            color: var(--muted);
+            font-size: 1.03rem;
+         }
 
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
-.stat{background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:17px;padding:23px;box-shadow:0 10px 28px rgba(30,60,90,.045);transition:transform .3s ease,box-shadow .3s ease}
-.stat:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.stat strong{font-size:1.75rem;color:var(--primary);display:block;letter-spacing:-.03em}.stat span{color:var(--muted);font-size:.92rem}
+         .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+         }
+         .stat {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--line);
+            border-radius: 17px;
+            padding: 23px;
+            box-shadow: 0 10px 28px rgba(30, 60, 90, 0.045);
+            transition:
+               transform 0.3s ease,
+               box-shadow 0.3s ease;
+         }
+         .stat:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+         }
+         .stat strong {
+            font-size: 1.75rem;
+            color: var(--primary);
+            display: block;
+            letter-spacing: -0.03em;
+         }
+         .stat span {
+            color: var(--muted);
+            font-size: 0.92rem;
+         }
 
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-.checks{display:grid;gap:13px}.check{padding:17px 19px;border:1px solid var(--line);background:rgba(255,255,255,.8);border-radius:13px;box-shadow:0 8px 25px rgba(30,60,90,.035);transition:transform .3s ease,border-color .3s ease}
-.check:hover{transform:translateX(5px);border-color:#b8d5df}.check b{color:var(--primary2)}
+         .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+         }
+         .checks {
+            display: grid;
+            gap: 13px;
+         }
+         .check {
+            padding: 17px 19px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 13px;
+            box-shadow: 0 8px 25px rgba(30, 60, 90, 0.035);
+            transition:
+               transform 0.3s ease,
+               border-color 0.3s ease;
+         }
+         .check:hover {
+            transform: translateX(5px);
+            border-color: #b8d5df;
+         }
+         .check b {
+            color: var(--primary2);
+         }
 
-.tags{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:9px 14px;background:#fff;border:1px solid var(--line);border-radius:999px;color:#405367;font-weight:650;transition:all .25s ease}.tag:hover{color:var(--primary);border-color:#a9ced6;transform:translateY(-2px)}
+         .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+         }
+         .tag {
+            padding: 9px 14px;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            color: #405367;
+            font-weight: 650;
+            transition: all 0.25s ease;
+         }
+         .tag:hover {
+            color: var(--primary);
+            border-color: #a9ced6;
+            transform: translateY(-2px);
+         }
 
-.timeline{border-left:2px solid #cbdde5;margin-left:9px;padding-left:30px;display:grid;gap:27px}
-.job{position:relative}.job:before{content:"";position:absolute;left:-38px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
-.job h3{margin:0 0 2px;font-size:1.17rem}.company{color:var(--primary);font-weight:800}.date{color:#8190a0;font-size:.9rem}.job p{color:var(--muted);margin:7px 0 0}
+         .timeline {
+            border-left: 2px solid #cbdde5;
+            margin-left: 9px;
+            padding-left: 30px;
+            display: grid;
+            gap: 27px;
+         }
+         .job {
+            position: relative;
+         }
+         .job:before {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 0 5px var(--bg);
+         }
+         .job h3 {
+            margin: 0 0 2px;
+            font-size: 1.17rem;
+         }
+         .company {
+            color: var(--primary);
+            font-weight: 800;
+         }
+         .date {
+            color: #8190a0;
+            font-size: 0.9rem;
+         }
+         .job p {
+            color: var(--muted);
+            margin: 7px 0 0;
+         }
 
-.projects{display:grid;grid-template-columns:1fr 1fr;gap:19px}.project{background:#fff;border:1px solid var(--line);border-radius:18px;padding:27px;box-shadow:0 10px 30px rgba(30,60,90,.045);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
-.project:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#bfd5df}.project h3{margin:0 0 7px;font-size:1.17rem}.role{color:var(--primary2);font-size:.87rem;font-weight:800}.project ul{margin:14px 0 0;padding-left:20px;color:var(--muted)}.project li{margin:6px 0}
+         .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 19px;
+         }
+         .project {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 27px;
+            box-shadow: 0 10px 30px rgba(30, 60, 90, 0.045);
+            transition:
+               transform 0.35s ease,
+               box-shadow 0.35s ease,
+               border-color 0.35s ease;
+         }
+         .project:hover {
+            transform: translateY(-7px);
+            box-shadow: var(--shadow);
+            border-color: #bfd5df;
+         }
+         .project h3 {
+            margin: 0 0 7px;
+            font-size: 1.17rem;
+         }
+         .role {
+            color: var(--primary2);
+            font-size: 0.87rem;
+            font-weight: 800;
+         }
+         .project ul {
+            margin: 14px 0 0;
+            padding-left: 20px;
+            color: var(--muted);
+         }
+         .project li {
+            margin: 6px 0;
+         }
 
-.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:23px;box-shadow:0 10px 28px rgba(30,60,90,.04)}.card h3{margin:7px 0}.card p{color:var(--muted);margin:0}
+         .edu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 17px;
+         }
+         .card {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 17px;
+            padding: 23px;
+            box-shadow: 0 10px 28px rgba(30, 60, 90, 0.04);
+         }
+         .card h3 {
+            margin: 7px 0;
+         }
+         .card p {
+            color: var(--muted);
+            margin: 0;
+         }
 
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:19px}.box{background:#fff;border:1px solid var(--line);border-radius:19px;padding:29px;box-shadow:0 12px 32px rgba(30,60,90,.05)}.item{margin:17px 0}.item small{display:block;color:#8190a0;text-transform:uppercase;letter-spacing:.08em;font-weight:800;font-size:.72rem}.item a{color:var(--primary);font-weight:700}.address{color:#405367}
+         .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 19px;
+         }
+         .box {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 19px;
+            padding: 29px;
+            box-shadow: 0 12px 32px rgba(30, 60, 90, 0.05);
+         }
+         .item {
+            margin: 17px 0;
+         }
+         .item small {
+            display: block;
+            color: #8190a0;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 800;
+            font-size: 0.72rem;
+         }
+         .item a {
+            color: var(--primary);
+            font-weight: 700;
+         }
+         .address {
+            color: #405367;
+         }
 
-footer{background:#122b3a;color:#c9d7df;padding:30px 0}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot span{color:#91a8b5}
+         footer {
+            background: #122b3a;
+            color: #c9d7df;
+            padding: 30px 0;
+         }
+         .foot {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            flex-wrap: wrap;
+         }
+         .foot span {
+            color: #91a8b5;
+         }
 
-.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}.reveal-left{opacity:0;transform:translateX(-35px);transition:opacity .8s ease,transform .8s ease}.reveal-right{opacity:0;transform:translateX(35px);transition:opacity .8s ease,transform .8s ease}.visible{opacity:1;transform:none}
-.delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}.delay-4{transition-delay:.32s}
+         .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+            transition:
+               opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+               transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+         }
+         .reveal-left {
+            opacity: 0;
+            transform: translateX(-35px);
+            transition:
+               opacity 0.8s ease,
+               transform 0.8s ease;
+         }
+         .reveal-right {
+            opacity: 0;
+            transform: translateX(35px);
+            transition:
+               opacity 0.8s ease,
+               transform 0.8s ease;
+         }
+         .visible {
+            opacity: 1;
+            transform: none;
+         }
+         .delay-1 {
+            transition-delay: 0.08s;
+         }
+         .delay-2 {
+            transition-delay: 0.16s;
+         }
+         .delay-3 {
+            transition-delay: 0.24s;
+         }
+         .delay-4 {
+            transition-delay: 0.32s;
+         }
 
-.scroll-top{position:fixed;right:22px;bottom:22px;width:43px;height:43px;border:0;border-radius:50%;background:var(--primary);color:#fff;font-size:19px;cursor:pointer;opacity:0;pointer-events:none;transition:all .3s ease;box-shadow:0 10px 25px rgba(21,94,117,.22)}.scroll-top.show{opacity:1;pointer-events:auto}.scroll-top:hover{transform:translateY(-3px)}
+         .scroll-top {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 43px;
+            height: 43px;
+            border: 0;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            font-size: 19px;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(21, 94, 117, 0.22);
+         }
+         .scroll-top.show {
+            opacity: 1;
+            pointer-events: auto;
+         }
+         .scroll-top:hover {
+            transform: translateY(-3px);
+         }
 
-@media(max-width:880px){
- nav,.nav-cta{display:none}.menu{display:block}
- .hero-grid,.two-col,.contact,.projects{grid-template-columns:1fr}.hero{padding-top:65px}.profile-wrap{max-width:470px}
- .stats{grid-template-columns:repeat(2,1fr)}.edu{grid-template-columns:1fr 1fr}
-}
-@media(max-width:540px){
- .container{width:90%}.stats,.edu{grid-template-columns:1fr}.hero{padding:58px 0 65px}h1{font-size:3.25rem}.section-head h2{font-size:2.2rem}section{padding:70px 0}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.reveal-left,.reveal-right{opacity:1;transform:none;transition:none}.btn,.project,.stat{transition:none}}
-</style>
-</head>
-<body>
-<header><div class="container nav">
-<a class="brand" href="#top">Ponselvan <span>Ganesan</span></a>
-<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
-<a class="nav-cta" href="#contact">Let's Connect</a><button class="menu" onclick="toggleNav()" aria-label="Open navigation">☰</button>
-</div></header>
+         @media (max-width: 880px) {
+            nav,
+            .nav-cta {
+               display: none;
+            }
+            .menu {
+               display: block;
+            }
+            .hero-grid,
+            .two-col,
+            .contact,
+            .projects {
+               grid-template-columns: 1fr;
+            }
+            .hero {
+               padding-top: 65px;
+            }
+            .profile-wrap {
+               max-width: 470px;
+            }
+            .stats {
+               grid-template-columns: repeat(2, 1fr);
+            }
+            .edu {
+               grid-template-columns: 1fr 1fr;
+            }
+         }
+         @media (max-width: 540px) {
+            .container {
+               width: 90%;
+            }
+            .stats,
+            .edu {
+               grid-template-columns: 1fr;
+            }
+            .hero {
+               padding: 58px 0 65px;
+            }
+            h1 {
+               font-size: 3.25rem;
+            }
+            .section-head h2 {
+               font-size: 2.2rem;
+            }
+            section {
+               padding: 70px 0;
+            }
+         }
+         @media (prefers-reduced-motion: reduce) {
+            html {
+               scroll-behavior: auto;
+            }
+            .reveal,
+            .reveal-left,
+            .reveal-right {
+               opacity: 1;
+               transform: none;
+               transition: none;
+            }
+            .btn,
+            .project,
+            .stat {
+               transition: none;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="container nav">
+            <a class="brand" href="#top">Ponselvan <span>Ganesan</span></a>
+            <nav>
+               <a href="#about">About</a><a href="#skills">Skills</a
+               ><a href="#experience">Experience</a
+               ><a href="#projects">Projects</a><a href="#contact">Contact</a
+               ><a
+                  href="https://github.com/ponselvang"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+               ><a
+                  href="https://www.linkedin.com/in/ponselvan-ganesan-0a393a13a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+               >
+            </nav>
+            <a class="nav-cta" href="#contact">Let's Connect</a
+            ><button
+               class="menu"
+               onclick="toggleNav()"
+               aria-label="Open navigation"
+            >
+               ☰
+            </button>
+         </div>
+      </header>
 
-<main id="top">
-<section class="hero"><div class="container hero-grid">
-<div class="reveal-left">
-<div class="eyebrow">Senior Liferay Developer · Development Lead</div>
-<h1>Engineering <span>enterprise</span> digital experiences.</h1>
-<p class="hero-copy">Senior Liferay Developer with 9+ years of hands-on experience designing, developing, upgrading and maintaining enterprise-level Liferay portal solutions, with a strong focus on scalable architecture, security, performance and maintainability.</p>
-<div class="actions"><a class="btn" href="#projects">Explore My Work</a><a class="btn secondary" href="#contact">Let's Connect</a></div>
-</div>
-<div class="profile-wrap reveal-right"><div class="profile-card"><img class="profile-photo" src="profile-photo.png" alt="Ponselvan Ganesan profile photo"><div class="profile-meta"><strong>Development Lead</strong><small>Chennai, India · Liferay · Java · React</small></div></div></div>
-</div></section>
+      <main id="top">
+         <section class="hero">
+            <div class="container hero-grid">
+               <div class="reveal-left">
+                  <div class="eyebrow">
+                     Senior Liferay Developer · Development Lead
+                  </div>
+                  <h1>
+                     Engineering <span>enterprise</span> digital experiences.
+                  </h1>
+                  <p class="hero-copy">
+                     Senior Liferay Developer with 9+ years of hands-on
+                     experience designing, developing, upgrading and maintaining
+                     enterprise-level Liferay portal solutions, with a strong
+                     focus on scalable architecture, security, performance and
+                     maintainability.
+                  </p>
+                  <div class="actions">
+                     <a class="btn" href="#projects">Explore My Work</a
+                     ><a class="btn secondary" href="#contact">Let's Connect</a
+                     ><a
+                        class="btn secondary"
+                        href="https://github.com/ponselvang"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >GitHub Profile</a
+                     ><a
+                        class="btn secondary"
+                        href="https://www.linkedin.com/in/ponselvan-ganesan-0a393a13a/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >LinkedIn</a
+                     >
+                  </div>
+               </div>
+               <div class="profile-wrap reveal-right">
+                  <div class="profile-card">
+                     <img
+                        class="profile-photo"
+                        src="profile-photo.png"
+                        alt="Ponselvan Ganesan profile photo"
+                     />
+                     <div class="profile-meta">
+                        <strong>Development Lead</strong
+                        ><small>Chennai, India · Liferay · Java · React</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-<section class="section-alt"><div class="container"><div class="stats">
-<div class="stat reveal delay-1"><strong>9+</strong><span>Years of Experience</span></div>
-<div class="stat reveal delay-2"><strong>Liferay</strong><span>DXP · 7.x · 6.2</span></div>
-<div class="stat reveal delay-3"><strong>React</strong><span>Reusable UI Components</span></div>
-<div class="stat reveal delay-4"><strong>Cloud</strong><span>AWS · OpenShift · CI/CD</span></div>
-</div></div></section>
+         <section class="section-alt">
+            <div class="container">
+               <div class="stats">
+                  <div class="stat reveal delay-1">
+                     <strong>9+</strong><span>Years of Experience</span>
+                  </div>
+                  <div class="stat reveal delay-2">
+                     <strong>Liferay</strong><span>DXP · 7.x · 6.2</span>
+                  </div>
+                  <div class="stat reveal delay-3">
+                     <strong>React</strong><span>Reusable UI Components</span>
+                  </div>
+                  <div class="stat reveal delay-4">
+                     <strong>Cloud</strong><span>AWS · OpenShift · CI/CD</span>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-<section id="about"><div class="container two-col">
-<div class="reveal-left"><div class="eyebrow">About Me</div><div class="section-head"><h2>Deep platform expertise. Practical delivery.</h2><p>I work across Liferay development, platform upgrades, integrations, APIs, security, search and cloud deployment. I also lead teams, gather requirements, prepare technical designs and deliver change requests.</p></div></div>
-<div class="checks reveal-right">
-<div class="check">✓ <b>Liferay Engineering</b> — Modules, MVC, Service Builder, Objects, Forms, Fragments and WCM.</div>
-<div class="check">✓ <b>API Development</b> — REST, Headless APIs, JSON Web Services and OAuth 2.</div>
-<div class="check">✓ <b>Platform & Search</b> — Elasticsearch, Tomcat, AWS and OpenShift.</div>
-<div class="check">✓ <b>Quality & Security</b> — SonarQube, Pen Testing, Wiz and Contrast Security.</div>
-</div></div></section>
+         <section id="about">
+            <div class="container two-col">
+               <div class="reveal-left">
+                  <div class="eyebrow">About Me</div>
+                  <div class="section-head">
+                     <h2>Deep platform expertise. Practical delivery.</h2>
+                     <p>
+                        I work across Liferay development, platform upgrades,
+                        integrations, APIs, security, search and cloud
+                        deployment. I also lead teams, gather requirements,
+                        prepare technical designs and deliver change requests.
+                     </p>
+                  </div>
+               </div>
+               <div class="checks reveal-right">
+                  <div class="check">
+                     ✓ <b>Liferay Engineering</b> — Modules, MVC, Service
+                     Builder, Objects, Forms, Fragments and WCM.
+                  </div>
+                  <div class="check">
+                     ✓ <b>API Development</b> — REST, Headless APIs, JSON Web
+                     Services and OAuth 2.
+                  </div>
+                  <div class="check">
+                     ✓ <b>Platform & Search</b> — Elasticsearch, Tomcat, AWS and
+                     OpenShift.
+                  </div>
+                  <div class="check">
+                     ✓ <b>Quality & Security</b> — SonarQube, Pen Testing, Wiz
+                     and Contrast Security.
+                  </div>
+               </div>
+            </div>
+         </section>
 
-<section id="skills" class="section-alt"><div class="container"><div class="section-head reveal"><div class="eyebrow">Technical Skills</div><h2>A technology stack built for enterprise delivery.</h2><p>Core technologies and tools represented in my professional experience.</p></div>
-<div class="tags reveal"><span class="tag">Liferay DXP</span><span class="tag">Liferay 7.x</span><span class="tag">Liferay 6.2</span><span class="tag">Java</span><span class="tag">JSP</span><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">REST</span><span class="tag">Headless APIs</span><span class="tag">OAuth 2</span><span class="tag">Service Builder</span><span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">Elasticsearch</span><span class="tag">AWS</span><span class="tag">OpenShift</span><span class="tag">Docker</span><span class="tag">Gradle</span><span class="tag">GitHub</span><span class="tag">GitLab</span><span class="tag">SonarQube</span><span class="tag">Postman</span><span class="tag">Swagger</span><span class="tag">Splunk</span></div></div></section>
+         <section id="skills" class="section-alt">
+            <div class="container">
+               <div class="section-head reveal">
+                  <div class="eyebrow">Technical Skills</div>
+                  <h2>A technology stack built for enterprise delivery.</h2>
+                  <p>
+                     Core technologies and tools represented in my professional
+                     experience.
+                  </p>
+               </div>
+               <div class="tags reveal">
+                  <span class="tag">Liferay DXP</span
+                  ><span class="tag">Liferay 7.x</span
+                  ><span class="tag">Liferay 6.2</span
+                  ><span class="tag">Java</span><span class="tag">JSP</span
+                  ><span class="tag">React</span
+                  ><span class="tag">JavaScript</span
+                  ><span class="tag">HTML5</span><span class="tag">CSS3</span
+                  ><span class="tag">REST</span
+                  ><span class="tag">Headless APIs</span
+                  ><span class="tag">OAuth 2</span
+                  ><span class="tag">Service Builder</span
+                  ><span class="tag">MySQL</span><span class="tag">Oracle</span
+                  ><span class="tag">PostgreSQL</span
+                  ><span class="tag">SQL Server</span
+                  ><span class="tag">Elasticsearch</span
+                  ><span class="tag">AWS</span><span class="tag">OpenShift</span
+                  ><span class="tag">Docker</span><span class="tag">Gradle</span
+                  ><span class="tag">GitHub</span><span class="tag">GitLab</span
+                  ><span class="tag">SonarQube</span
+                  ><span class="tag">Postman</span
+                  ><span class="tag">Swagger</span
+                  ><span class="tag">Splunk</span>
+				  <span class="tag">React JS</span>
+				  <span class="tag">Liferay Objects</span>
+				  <span class="tag">Liferay Forms</span>
+				  <span class="tag">Liferay Blueprint</span>
+				  <span class="tag">Liferay Client Extension</span>
+               </div>
+            </div>
+         </section>
 
-<section id="experience"><div class="container"><div class="section-head reveal"><div class="eyebrow">Career</div><h2>Professional experience</h2></div><div class="timeline reveal">
-<div class="job"><h3>Development Lead</h3><div class="company">Accenture · Chennai</div><div class="date">Dec 2023 – Present</div><p>Leading enterprise Liferay development, migrations, custom APIs, Elasticsearch integration, client requirements, LLDs and change requests.</p></div>
-<div class="job"><h3>Team Leader</h3><div class="company">Care Edge Risk Solutions · Chennai</div><div class="date">Aug 2023 – Nov 2023</div></div>
-<div class="job"><h3>Specialist – Software Engineering</h3><div class="company">LTIMindtree · Chennai</div><div class="date">Dec 2022 – Jul 2023</div></div>
-<div class="job"><h3>Associate Consultant</h3><div class="company">Infosys · Chennai</div><div class="date">Jun 2021 – Dec 2022</div></div>
-<div class="job"><h3>Associate Projects</h3><div class="company">Cognizant · Chennai</div><div class="date">Dec 2019 – Jun 2021</div></div>
-<div class="job"><h3>Project Engineer</h3><div class="company">Wipro Limited · Chennai</div><div class="date">Oct 2018 – Dec 2019</div></div>
-<div class="job"><h3>Software Engineer</h3><div class="company">Kvaliteta Systems & Solutions · Trivandrum</div><div class="date">Sep 2016 – Sep 2018</div></div>
-</div></div></section>
+         <section id="experience">
+            <div class="container">
+               <div class="section-head reveal">
+                  <div class="eyebrow">Career</div>
+                  <h2>Professional experience</h2>
+               </div>
+               <div class="timeline reveal">
+                  <div class="job">
+                     <h3>Development Lead</h3>
+                     <div class="company">Accenture · Chennai</div>
+                     <div class="date">Dec 2023 – Present</div>
+                     <p>
+                        Leading enterprise Liferay development, migrations,
+                        custom APIs, Elasticsearch integration, client
+                        requirements, LLDs and change requests.
+                     </p>
+                  </div>
+                  <div class="job">
+                     <h3>Team Leader</h3>
+                     <div class="company">
+                        Care Edge Risk Solutions · Chennai
+                     </div>
+                     <div class="date">Aug 2023 – Nov 2023</div>
+                  </div>
+                  <div class="job">
+                     <h3>Specialist – Software Engineering</h3>
+                     <div class="company">LTIMindtree · Chennai</div>
+                     <div class="date">Dec 2022 – Jul 2023</div>
+                  </div>
+                  <div class="job">
+                     <h3>Associate Consultant</h3>
+                     <div class="company">Infosys · Chennai</div>
+                     <div class="date">Jun 2021 – Dec 2022</div>
+                  </div>
+                  <div class="job">
+                     <h3>Associate Projects</h3>
+                     <div class="company">Cognizant · Chennai</div>
+                     <div class="date">Dec 2019 – Jun 2021</div>
+                  </div>
+                  <div class="job">
+                     <h3>Project Engineer</h3>
+                     <div class="company">Wipro Limited · Chennai</div>
+                     <div class="date">Oct 2018 – Dec 2019</div>
+                  </div>
+                  <div class="job">
+                     <h3>Software Engineer</h3>
+                     <div class="company">
+                        Kvaliteta Systems & Solutions · Trivandrum
+                     </div>
+                     <div class="date">Sep 2016 – Sep 2018</div>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-<section id="projects" class="section-alt"><div class="container"><div class="section-head reveal"><div class="eyebrow">Selected Work</div><h2>Projects where Liferay meets real business needs.</h2></div><div class="projects">
-<div class="project reveal delay-1"><h3>Liferay CMS Application</h3><div class="role">Development Lead · Liferay DXP · Oracle · OpenShift</div><ul><li>Led migration from Liferay DXP 7.4.U77 to 7.4.Q4.0.</li><li>Designed custom Headless APIs and OAuth2 authentication.</li><li>Installed and configured Elasticsearch 8.15 and integrated it with Liferay.</li><li>Participated in requirements, LLD preparation and change requests.</li></ul></div>
-<div class="project reveal delay-2"><h3>Liferay Master Solution (BMW Web Team)</h3><div class="role">Team Lead · Liferay 7.4 · PostgreSQL · AWS / On-Prem</div><ul><li>Led migrations across 7.4.21 → 7.4.93 → 7.4.106.</li><li>Configured SonarQube for automated code-quality analysis.</li><li>Developed custom portlets, filter hooks and themes.</li><li>Mentored developers and guided Liferay best practices.</li></ul></div>
-<div class="project reveal delay-3"><h3>Edelweiss</h3><div class="role">Team Lead · Liferay 7.4 · Microsoft SQL Server</div><ul><li>Managed Liferay Objects and Forms for business workflows.</li><li>Implemented MVC portlets, filter hooks, themes and OSGi modules.</li><li>Developed REST web services using OAuth 2 Administration.</li><li>Created and managed fragments.</li></ul></div>
-<div class="project reveal delay-4"><h3>LeasePlan</h3><div class="role">Specialist – Software Engineering · Liferay 7.4</div><ul><li>Implemented user segmentation based on city selection.</li><li>Created Web Content and rendered content using Asset Publisher.</li><li>Developed OAuth 2 REST APIs and PDF generation using iText.</li><li>Optimized database queries and indexing.</li></ul></div>
-<div class="project reveal delay-1"><h3>Quality MyLam</h3><div class="role">Associate Consultant · Liferay 7.1</div><ul><li>Worked on requirements, FS/TS documents and change requests.</li><li>Created and managed Web Content and REST services.</li><li>Worked with Document and Media backend uploads.</li><li>Performed testing, defect analysis and root-cause analysis.</li></ul></div>
-<div class="project reveal delay-2"><h3>GenHealthy / BizLink / HPE PRP STA</h3><div class="role">Earlier enterprise Liferay projects</div><ul><li>Developed and supported business applications across Liferay versions.</li><li>Customized workflows, permissions and Web Content.</li><li>Integrated external databases using JDBC/JNDI.</li><li>Provided L2/L3 production support and resolved production issues.</li></ul></div>
-</div></div></section>
+         <section id="projects" class="section-alt">
+            <div class="container">
+               <div class="section-head reveal">
+                  <div class="eyebrow">Selected Work</div>
+                  <h2>Projects where Liferay meets real business needs.</h2>
+               </div>
+               <div class="projects">
+                  <div class="project reveal delay-1">
+                     <h3>Liferay CMS Application</h3>
+                     <div class="role">
+                        Development Lead · Liferay DXP · Oracle · OpenShift
+                     </div>
+                     <ul>
+                        <li>
+                           Led migration from Liferay DXP 7.4.U77 to 7.4.Q4.0.
+                        </li>
+                        <li>
+                           Designed custom Headless APIs and OAuth2
+                           authentication.
+                        </li>
+                        <li>
+                           Installed and configured Elasticsearch 8.15 and
+                           integrated it with Liferay.
+                        </li>
+                        <li>
+                           Participated in requirements, LLD preparation and
+                           change requests.
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="project reveal delay-2">
+                     <h3>Liferay Master Solution (BMW Web Team)</h3>
+                     <div class="role">
+                        Team Lead · Liferay 7.4 · PostgreSQL · AWS / On-Prem
+                     </div>
+                     <ul>
+                        <li>
+                           Led migrations across 7.4.21 → 7.4.93 → 7.4.106.
+                        </li>
+                        <li>
+                           Configured SonarQube for automated code-quality
+                           analysis.
+                        </li>
+                        <li>
+                           Developed custom portlets, filter hooks and themes.
+                        </li>
+                        <li>
+                           Mentored developers and guided Liferay best
+                           practices.
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="project reveal delay-3">
+                     <h3>Edelweiss</h3>
+                     <div class="role">
+                        Team Lead · Liferay 7.4 · Microsoft SQL Server
+                     </div>
+                     <ul>
+                        <li>
+                           Managed Liferay Objects and Forms for business
+                           workflows.
+                        </li>
+                        <li>
+                           Implemented MVC portlets, filter hooks, themes and
+                           OSGi modules.
+                        </li>
+                        <li>
+                           Developed REST web services using OAuth 2
+                           Administration.
+                        </li>
+                        <li>Created and managed fragments.</li>
+                     </ul>
+                  </div>
+                  <div class="project reveal delay-4">
+                     <h3>LeasePlan</h3>
+                     <div class="role">
+                        Specialist – Software Engineering · Liferay 7.4
+                     </div>
+                     <ul>
+                        <li>
+                           Implemented user segmentation based on city
+                           selection.
+                        </li>
+                        <li>
+                           Created Web Content and rendered content using Asset
+                           Publisher.
+                        </li>
+                        <li>
+                           Developed OAuth 2 REST APIs and PDF generation using
+                           iText.
+                        </li>
+                        <li>Optimized database queries and indexing.</li>
+                     </ul>
+                  </div>
+                  <div class="project reveal delay-1">
+                     <h3>Quality MyLam</h3>
+                     <div class="role">Associate Consultant · Liferay 7.1</div>
+                     <ul>
+                        <li>
+                           Worked on requirements, FS/TS documents and change
+                           requests.
+                        </li>
+                        <li>
+                           Created and managed Web Content and REST services.
+                        </li>
+                        <li>Worked with Document and Media backend uploads.</li>
+                        <li>
+                           Performed testing, defect analysis and root-cause
+                           analysis.
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="project reveal delay-2">
+                     <h3>GenHealthy / BizLink / HPE PRP STA</h3>
+                     <div class="role">Earlier enterprise Liferay projects</div>
+                     <ul>
+                        <li>
+                           Developed and supported business applications across
+                           Liferay versions.
+                        </li>
+                        <li>
+                           Customized workflows, permissions and Web Content.
+                        </li>
+                        <li>Integrated external databases using JDBC/JNDI.</li>
+                        <li>
+                           Provided L2/L3 production support and resolved
+                           production issues.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-<section><div class="container"><div class="section-head reveal"><div class="eyebrow">Education</div><h2>Academic background</h2></div><div class="edu">
-<div class="card reveal delay-1"><div class="role">2012 – 2016</div><h3>B.E. – Electronics & Communication Engineering</h3><p>National College of Engineering, Anna University · 64%</p></div>
-<div class="card reveal delay-2"><div class="role">Higher Secondary</div><h3>HSC</h3><p>81% · Punitha Arulappar Hr. Sec. School, Tamil Nadu</p></div>
-<div class="card reveal delay-3"><div class="role">Secondary</div><h3>SSLC</h3><p>84% · Punitha Arulappar Hr. Sec. School, Tamil Nadu</p></div>
-</div></div></section>
+         <section>
+            <div class="container">
+               <div class="section-head reveal">
+                  <div class="eyebrow">Education</div>
+                  <h2>Academic background</h2>
+               </div>
+               <div class="edu">
+                  <div class="card reveal delay-1">
+                     <div class="role">2012 – 2016</div>
+                     <h3>B.E. – Electronics & Communication Engineering</h3>
+                     <p>
+                        National College of Engineering, Anna University · 64%
+                     </p>
+                  </div>
+                  <div class="card reveal delay-2">
+                     <div class="role">Higher Secondary</div>
+                     <h3>HSC</h3>
+                     <p>81% · Punitha Arulappar Hr. Sec. School, Tamil Nadu</p>
+                  </div>
+                  <div class="card reveal delay-3">
+                     <div class="role">Secondary</div>
+                     <h3>SSLC</h3>
+                     <p>84% · Punitha Arulappar Hr. Sec. School, Tamil Nadu</p>
+                  </div>
+               </div>
+            </div>
+         </section>
 
-<section id="contact" class="section-alt"><div class="container"><div class="section-head reveal"><div class="eyebrow">Contact</div><h2>Let's build something reliable.</h2><p>For Liferay development, technical leadership or enterprise portal work, feel free to connect.</p></div>
-<div class="contact"><div class="box reveal-left">
-<div class="item"><small>Email</small><a href="mailto:ponselvan3252@gmail.com">ponselvan3252@gmail.com</a></div>
-<div class="item"><small>Phone</small><a href="tel:+918903456503">+91 8903456503</a></div>
-<div class="item"><small>Professional Location</small><span>Chennai, India</span></div>
-</div>
-<div class="box reveal-right">
-<div class="item"><small>Address</small><div class="address">9/239-1, Maruthaniyoor, Avudaiyanoor, Tenkasi, Tamil Nadu – 627808</div></div>
-<div class="actions"><a class="btn" href="mailto:ponselvan3252@gmail.com?subject=Professional%20Enquiry">Email Me</a><a class="btn secondary" href="tel:+918903456503">Call Me</a></div>
-</div></div></div></section>
-</main>
+         <section id="contact" class="section-alt">
+            <div class="container">
+               <div class="section-head reveal">
+                  <div class="eyebrow">Contact</div>
+                  <h2>Let's build something reliable.</h2>
+                  <p>
+                     For Liferay development, technical leadership or enterprise
+                     portal work, feel free to connect.
+                  </p>
+               </div>
+               <div class="contact">
+                  <div class="box reveal-left">
+                     <div class="item">
+                        <small>Email</small
+                        ><a href="mailto:ponselvan3252@gmail.com"
+                           >ponselvan3252@gmail.com</a
+                        >
+                     </div>
+                     <div class="item">
+                        <small>Phone</small
+                        ><a href="tel:+918903456503">+91 8903456503</a>
+                     </div>
+                     <div class="item">
+                        <small>Professional Location</small
+                        ><span>Chennai, India</span>
+                     </div>
+                  </div>
+                  <div class="box reveal-right">
+                     <div class="item">
+                        <small>GitHub</small
+                        ><a
+                           href="https://github.com/ponselvang"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >github.com/ponselvang</a
+                        >
+                     </div>
+                     <div class="item">
+                        <small>LinkedIn</small
+                        ><a
+                           href="https://www.linkedin.com/in/ponselvan-ganesan-0a393a13a/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >linkedin.com/in/ponselvan-ganesan</a
+                        >
+                     </div>
+                     <div class="actions">
+                        <a
+                           class="btn"
+                           href="mailto:ponselvan3252@gmail.com?subject=Professional%20Enquiry"
+                           >Email Me</a
+                        ><a class="btn secondary" href="tel:+918903456503"
+                           >Call Me</a
+                        >
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
 
-<footer><div class="container foot"><div>© 2026 Ponselvan Ganesan</div><span>Senior Liferay Developer · Development Lead</span></div></footer>
-<button class="scroll-top" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-<script>
-function toggleNav(){
- const n=document.querySelector("nav");
- const open=n.style.display==="flex";
- n.style.display=open?"none":"flex";
- if(!open){n.style.flexDirection="column";n.style.position="absolute";n.style.top="74px";n.style.left="0";n.style.right="0";n.style.padding="20px 5%";n.style.background="#f8fafc";n.style.borderBottom="1px solid #dce5ed";}
-}
-const observer=new IntersectionObserver((entries)=>{
- entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}})
-},{threshold:.12,rootMargin:"0px 0px -45px 0px"});
-document.querySelectorAll(".reveal,.reveal-left,.reveal-right").forEach(el=>observer.observe(el));
-const topBtn=document.getElementById("topBtn");
-window.addEventListener("scroll",()=>topBtn.classList.toggle("show",window.scrollY>600),{passive:true});
-document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav").style.display="none"));
-</script>
-</body></html>
+      <footer>
+         <div class="container foot">
+            <div>© 2026 Ponselvan Ganesan</div>
+            <span>Senior Liferay Developer · Development Lead</span>
+         </div>
+      </footer>
+      <button
+         class="scroll-top"
+         id="topBtn"
+         onclick="window.scrollTo({top:0,behavior:'smooth'})"
+         aria-label="Back to top"
+      >
+         ↑
+      </button>
+      <script>
+         function toggleNav() {
+            const n = document.querySelector("nav");
+            const open = n.style.display === "flex";
+            n.style.display = open ? "none" : "flex";
+            if (!open) {
+               n.style.flexDirection = "column";
+               n.style.position = "absolute";
+               n.style.top = "74px";
+               n.style.left = "0";
+               n.style.right = "0";
+               n.style.padding = "20px 5%";
+               n.style.background = "#f8fafc";
+               n.style.borderBottom = "1px solid #dce5ed";
+            }
+         }
+         const observer = new IntersectionObserver(
+            (entries) => {
+               entries.forEach((e) => {
+                  if (e.isIntersecting) {
+                     e.target.classList.add("visible");
+                     observer.unobserve(e.target);
+                  }
+               });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -45px 0px" },
+         );
+         document
+            .querySelectorAll(".reveal,.reveal-left,.reveal-right")
+            .forEach((el) => observer.observe(el));
+         const topBtn = document.getElementById("topBtn");
+         window.addEventListener(
+            "scroll",
+            () => topBtn.classList.toggle("show", window.scrollY > 600),
+            { passive: true },
+         );
+         document
+            .querySelectorAll("nav a")
+            .forEach((a) =>
+               a.addEventListener(
+                  "click",
+                  () => (document.querySelector("nav").style.display = "none"),
+               ),
+            );
+      </script>
+   </body>
+</html>
