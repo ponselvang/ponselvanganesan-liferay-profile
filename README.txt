@@ -1,14 +1,7 @@
-Ponselvan Ganesan professional portfolio - static website.
+Ponselvan Ganesan - Professional Portfolio
 
-Open index.html directly in a browser or deploy the folder to GitHub Pages, Cloudflare Pages, Netlify, etc.
+Updated social profiles:
+- GitHub: https://github.com/ponselvang
+- LinkedIn: https://www.linkedin.com/in/ponselvan-ganesan-0a393a13a/
 
-Features:
-- Professional light blue/teal visual system
-- Smooth anchor scrolling
-- Scroll-reveal transitions
-- Hover and card transitions
-- Responsive mobile navigation
-- Back-to-top button
-- Included profile-photo.png
-
-Review public personal/contact information before publishing.
+The site is a static HTML portfolio and can be hosted with GitHub Pages.
